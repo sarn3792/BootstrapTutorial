@@ -6,9 +6,48 @@
 
 	<meta name="viewport" content="width=devide-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+	<style type="text/css">
+		/*Computadora grande desktop */
+		@media(min-width: 1200px){
+			body{
+				color: red;
+			}
+		}
+		/*Computadora pequeña desktop o tablet*/
+		@media(min-width: 768px) and (max-width: 979px){
+			body{
+				color: green;
+			}
+
+		}
+		/*Tablet o smartphone */
+		@media(max-width: 767px){
+			body{
+				color: blue;
+			}
+		}
+		/*Smartphone */
+		@media(max-width: 480px){
+			body{
+				color: yellow;
+			}
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+				&nbsp;
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="well visible-desktop">
+					<h1 class="text-center">Desktop</h1>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="span12">
 				<h1>Testing</h1>
